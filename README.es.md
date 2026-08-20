@@ -1,4 +1,4 @@
-# Multifibra L.A. Website (WEB-PISCINA)
+# Multifibra L.A. Website (web-piscina-portfolio)
 
 Sitio corporativo orientado a conversión para una empresa de piscinas de fibra de vidrio, construido como SPA en React con analítica integrada, captura de leads y monitoreo de performance.
 
@@ -69,7 +69,7 @@ En ejecución, `App.tsx` compone el stack de providers (Helmet, contexto global,
 ### Pasos
 ```bash
 git clone <tu-url-del-repositorio>
-cd WEB-PISCINA
+cd web-piscina-portfolio
 npm install
 ```
 
@@ -129,7 +129,7 @@ npm run performance:budget
 
 ## Project Structure
 ```text
-WEB-PISCINA/
+web-piscina-portfolio/
 ├── public/                  # Assets estáticos (SEO, PWA, imágenes)
 ├── src/
 │   ├── components/          # UI reutilizable y módulos funcionales
