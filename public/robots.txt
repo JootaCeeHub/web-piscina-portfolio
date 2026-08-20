@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://multifibrala.cl/sitemap.xml
+
+# Disallow admin areas (if any)
+Disallow: /admin/
+Disallow: /private/
+
+# Allow all crawlers to access CSS and JS files
+Allow: /src/
+Allow: /assets/
+Allow: /*.css$
+Allow: /*.js$
+
+# Crawl delay (optional)
+Crawl-delay: 1
