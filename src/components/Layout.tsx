@@ -35,7 +35,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 
   const handleWhatsApp = () => {
     trackWhatsAppClick();
-    window.open('https://wa.me/56987654321?text=Hola, me interesa conocer más sobre sus piscinas de fibra de vidrio de alto estándar', '_blank');
+    window.open('https://wa.me/56900000000?text=Hola, me interesa conocer más sobre sus piscinas de fibra de vidrio de alto estándar', '_blank');
   };
 
   const handlePhoneClick = () => {
@@ -67,7 +67,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
               </div>
               <div>
                 <h1 className="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors">
-                  Multifibra L.A.
+                  Piscinas Andinas
                 </h1>
                 <p className="text-sm text-gray-600">Soluciones en Fibra de Vidrio</p>
               </div>
@@ -95,22 +95,22 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             <div className="flex items-center space-x-4">
               <div className="hidden lg:flex items-center space-x-6 text-sm text-gray-600">
                 <a 
-                  href="tel:+56987654321"
+                  href="tel:+56900000000"
                   onClick={handlePhoneClick}
                   className="flex items-center space-x-2 hover:text-blue-600 transition-colors group"
-                  aria-label="Llamar al teléfono +56 9 8765 4321"
+                  aria-label="Llamar al teléfono +56 9 0000 0000"
                 >
                   <Phone className="w-4 h-4 group-hover:scale-110 transition-transform" />
-                  <span>+56 9 8765 4321</span>
+                  <span>+56 9 0000 0000</span>
                 </a>
                 <a 
-                  href="mailto:info@multifibrala.cl"
+                  href="mailto:contacto@piscinasandinas.example.com"
                   onClick={handleEmailClick}
                   className="flex items-center space-x-2 hover:text-blue-600 transition-colors group"
-                  aria-label="Enviar email a info@multifibrala.cl"
+                  aria-label="Enviar email a contacto@piscinasandinas.example.com"
                 >
                   <Mail className="w-4 h-4 group-hover:scale-110 transition-transform" />
-                  <span>info@multifibrala.cl</span>
+                  <span>contacto@piscinasandinas.example.com</span>
                 </a>
               </div>
               
@@ -151,22 +151,22 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                 <div className="border-t border-gray-200 pt-4 mt-4">
                   <div className="flex flex-col space-y-3 text-sm text-gray-600">
                     <a 
-                      href="tel:+56987654321"
+                      href="tel:+56900000000"
                       onClick={handlePhoneClick}
                       className="flex items-center space-x-3 hover:text-blue-600 transition-colors"
-                      aria-label="Llamar al teléfono +56 9 8765 4321"
+                      aria-label="Llamar al teléfono +56 9 0000 0000"
                     >
                       <Phone className="w-4 h-4" />
-                      <span>+56 9 8765 4321</span>
+                      <span>+56 9 0000 0000</span>
                     </a>
                     <a 
-                      href="mailto:info@multifibrala.cl"
+                      href="mailto:contacto@piscinasandinas.example.com"
                       onClick={handleEmailClick}
                       className="flex items-center space-x-3 hover:text-blue-600 transition-colors"
-                      aria-label="Enviar email a info@multifibrala.cl"
+                      aria-label="Enviar email a contacto@piscinasandinas.example.com"
                     >
                       <Mail className="w-4 h-4" />
-                      <span>info@multifibrala.cl</span>
+                      <span>contacto@piscinasandinas.example.com</span>
                     </a>
                   </div>
                 </div>
@@ -215,7 +215,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                   <span className="text-white font-bold text-xl">MF</span>
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold">Multifibra L.A.</h3>
+                  <h3 className="text-2xl font-bold">Piscinas Andinas</h3>
                   <p className="text-gray-400">Soluciones en Fibra de Vidrio</p>
                 </div>
               </div>
@@ -268,22 +268,22 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
               <h4 className="text-xl font-semibold mb-6">Contacto</h4>
               <div className="space-y-4 text-gray-300">
                 <a 
-                  href="tel:+56987654321"
+                  href="tel:+56900000000"
                   onClick={handlePhoneClick}
                   className="flex items-center space-x-3 hover:text-white transition-colors group"
-                  aria-label="Llamar al teléfono +56 9 8765 4321"
+                  aria-label="Llamar al teléfono +56 9 0000 0000"
                 >
                   <Phone className="w-5 h-5 group-hover:scale-110 transition-transform" />
-                  <span>+56 9 8765 4321</span>
+                  <span>+56 9 0000 0000</span>
                 </a>
                 <a 
-                  href="mailto:info@multifibrala.cl"
+                  href="mailto:contacto@piscinasandinas.example.com"
                   onClick={handleEmailClick}
                   className="flex items-center space-x-3 hover:text-white transition-colors group"
-                  aria-label="Enviar email a info@multifibrala.cl"
+                  aria-label="Enviar email a contacto@piscinasandinas.example.com"
                 >
                   <Mail className="w-5 h-5 group-hover:scale-110 transition-transform" />
-                  <span>info@multifibrala.cl</span>
+                  <span>contacto@piscinasandinas.example.com</span>
                 </a>
                 <button
                   onClick={handleWhatsApp}
@@ -299,7 +299,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           <div className="border-t border-gray-700 mt-12 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center">
               <p className="text-gray-400 text-center md:text-left">
-                &copy; 2024 Multifibra L.A. Todos los derechos reservados.
+                &copy; 2024 Piscinas Andinas Todos los derechos reservados.
               </p>
               <div className="flex space-x-6 mt-4 md:mt-0 text-sm text-gray-400">
                 <a href="#" className="hover:text-white transition-colors">Política de Privacidad</a>

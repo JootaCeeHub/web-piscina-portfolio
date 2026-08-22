@@ -1,9 +1,9 @@
-# Multifibra L.A. Website (web-piscina-portfolio)
+# Piscinas Andinas Website (web-piscina-portfolio)
 
 Sitio corporativo orientado a conversión para una empresa de piscinas de fibra de vidrio, construido como SPA en React con analítica integrada, captura de leads y monitoreo de performance.
 
 ## Overview
-Este proyecto es una aplicación web de marketing y generación de leads para **Multifibra L.A.** Presenta la propuesta de valor, servicios y modelos de piscina, guiando a las personas usuarias hacia conversiones como formularios de contacto, WhatsApp y suscripción a newsletter.
+Este proyecto es una aplicación web de marketing y generación de leads para **Piscinas Andinas** Presenta la propuesta de valor, servicios y modelos de piscina, guiando a las personas usuarias hacia conversiones como formularios de contacto, WhatsApp y suscripción a newsletter.
 
 Además del contenido, la app incluye capacidades frontend avanzadas: A/B testing, instrumentación analítica, tracking de conversiones, chatbot/live chat, gestión SEO, utilidades de accesibilidad y monitoreo en ejecución.
 

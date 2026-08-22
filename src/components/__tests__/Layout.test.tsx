@@ -32,7 +32,7 @@ describe('Layout', () => {
       </Layout>
     );
     
-    expect(screen.getByText('Multifibra L.A.')).toBeInTheDocument();
+    expect(screen.getByText('Piscinas Andinas')).toBeInTheDocument();
     expect(screen.getByText('Inicio')).toBeInTheDocument();
     expect(screen.getByText('Servicios')).toBeInTheDocument();
     expect(screen.getByText('Nosotros')).toBeInTheDocument();
@@ -46,8 +46,8 @@ describe('Layout', () => {
       </Layout>
     );
     
-    expect(screen.getByText('+56 9 8765 4321')).toBeInTheDocument();
-    expect(screen.getByText('info@multifibrala.cl')).toBeInTheDocument();
+    expect(screen.getByText('+56 9 0000 0000')).toBeInTheDocument();
+    expect(screen.getByText('contacto@piscinasandinas.example.com')).toBeInTheDocument();
   });
 
   test('mobile menu toggles correctly', async () => {
@@ -82,7 +82,7 @@ describe('Layout', () => {
     await user.click(whatsappButton);
     
     expect(mockOpen).toHaveBeenCalledWith(
-      expect.stringContaining('wa.me/56987654321'),
+      expect.stringContaining('wa.me/56900000000'),
       '_blank'
     );
   });
@@ -114,7 +114,7 @@ describe('Layout', () => {
     );
     
     expect(screen.getByText(/especialistas en fabricación e instalación/i)).toBeInTheDocument();
-    expect(screen.getByText(/2024 multifibra l.a./i)).toBeInTheDocument();
+    expect(screen.getByText(/2024 piscinasandinas l.a./i)).toBeInTheDocument();
   });
 
   test('accessibility: skip links are present', () => {

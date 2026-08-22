@@ -78,10 +78,10 @@ export const apiConfig: APIConfig = {
     measurementId: import.meta.env.VITE_GA_MEASUREMENT_ID || 'G-XXXXXXXXXX',
     apiSecret: import.meta.env.VITE_GA_API_SECRET,
     conversionIds: {
-      leadGeneration: import.meta.env.VITE_GA_CONVERSION_LEAD || 'AW-123456789/abc123',
-      quoteRequest: import.meta.env.VITE_GA_CONVERSION_QUOTE || 'AW-123456789/def456',
-      technicalVisit: import.meta.env.VITE_GA_CONVERSION_VISIT || 'AW-123456789/ghi789',
-      purchase: import.meta.env.VITE_GA_CONVERSION_PURCHASE || 'AW-123456789/jkl012'
+      leadGeneration: import.meta.env.VITE_GA_CONVERSION_LEAD || 'AW-000000009/abc123',
+      quoteRequest: import.meta.env.VITE_GA_CONVERSION_QUOTE || 'AW-000000009/def456',
+      technicalVisit: import.meta.env.VITE_GA_CONVERSION_VISIT || 'AW-000000009/ghi789',
+      purchase: import.meta.env.VITE_GA_CONVERSION_PURCHASE || 'AW-000000009/jkl012'
     }
   },
   facebookPixel: {

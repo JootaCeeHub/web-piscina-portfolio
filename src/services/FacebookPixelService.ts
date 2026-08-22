@@ -227,7 +227,7 @@ class FacebookPixelService {
     });
   }
 
-  // Custom events for Multifibra L.A.
+  // Custom events for Piscinas Andinas
   trackPoolQuoteRequest(poolModel: string, estimatedValue: number): void {
     this.trackCustomEvent('PoolQuoteRequest', {
       pool_model: poolModel,

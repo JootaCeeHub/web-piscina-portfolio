@@ -59,7 +59,7 @@ export const useFunnelAnalytics = () => {
   return context;
 };
 
-// Predefined funnels for Multifibra L.A.
+// Predefined funnels for Piscinas Andinas
 const funnelDefinitions: FunnelDefinition[] = [
   {
     id: 'lead_generation',

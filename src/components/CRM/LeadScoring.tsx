@@ -82,7 +82,7 @@ export const useLeadScoring = () => {
   return context;
 };
 
-// Lead scoring rules for Multifibra L.A.
+// Lead scoring rules for Piscinas Andinas
 const scoringRules: LeadScoringRule[] = [
   // Demographic Scoring
   {

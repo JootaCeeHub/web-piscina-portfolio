@@ -192,10 +192,10 @@ describe('Analytics Utils', () => {
 
   describe('trackConversion', () => {
     test('tracks conversion with gtag', () => {
-      analyticsUtils.trackConversion('AW-123456789/abc123', 100, 'USD');
+      analyticsUtils.trackConversion('AW-000000009/abc123', 100, 'USD');
 
       expect(window.gtag).toHaveBeenCalledWith('event', 'conversion', {
-        send_to: 'AW-123456789/abc123',
+        send_to: 'AW-000000009/abc123',
         value: 100,
         currency: 'USD'
       });

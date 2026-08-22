@@ -1,4 +1,4 @@
-# Multifibra L.A.
+# Piscinas Andinas
 
 > **Curated public portfolio version.** This repository is a sanitized, non-production showcase extracted from 1 private source repositoryy. It intentionally excludes infrastructure, configuration, credentials, and internal history.
 

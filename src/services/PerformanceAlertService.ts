@@ -442,7 +442,7 @@ class PerformanceAlertService {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'X-Alert-Source': 'multifibra-performance-monitor'
+        'X-Alert-Source': 'piscinasandinas-performance-monitor'
       },
       body: JSON.stringify(payload)
     });

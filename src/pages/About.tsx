@@ -114,21 +114,21 @@ const About: React.FC = () => {
 
   const teamMembers = [
     {
-      name: 'Ing. Carlos Mendoza',
+      name: 'Especialista en Materiales Compuestos',
       position: 'Director Técnico',
       specialization: 'Materiales Compuestos',
       experience: '15+ años',
       image: 'https://images.pexels.com/photos/3866816/pexels-photo-3866816.jpeg?auto=compress&cs=tinysrgb&w=400'
     },
     {
-      name: 'Ing. Patricia Silva',
+      name: 'Especialista en Fabricación',
       position: 'Jefa de Producción',
       specialization: 'Procesos de Fabricación',
       experience: '12+ años',
       image: 'https://images.pexels.com/photos/5691604/pexels-photo-5691604.jpeg?auto=compress&cs=tinysrgb&w=400'
     },
     {
-      name: 'Téc. Roberto González',
+      name: 'Especialista en Instalación',
       position: 'Supervisor de Instalaciones',
       specialization: 'Instalación y Montaje',
       experience: '10+ años',
@@ -140,8 +140,8 @@ const About: React.FC = () => {
     <div className="space-y-0">
       <SEOHead 
         title="Nosotros - Líderes en Tecnología de Fibra de Vidrio"
-        description="Conoce la historia de Multifibra L.A., más de 8 años especializados en piscinas de fibra de vidrio. Equipo técnico certificado y tecnología de vanguardia."
-        keywords="empresa piscinas fibra vidrio, historia Multifibra, equipo técnico piscinas, certificaciones piscinas Chile"
+        description="Conoce la historia de Piscinas Andinas, más de 8 años especializados en piscinas de fibra de vidrio. Equipo técnico certificado y tecnología de vanguardia."
+        keywords="empresa piscinas fibra vidrio, historia Piscinas Andinas, equipo técnico piscinas, certificaciones piscinas Chile"
       />
       
       {/* Hero Section */}
@@ -178,7 +178,7 @@ const About: React.FC = () => {
               </h2>
               <div className="space-y-6 text-lg text-gray-600 leading-relaxed">
                 <p>
-                  <strong className="text-gray-900">Multifibra L.A.</strong> nace de la visión de crear piscinas 
+                  <strong className="text-gray-900">Piscinas Andinas</strong> nace de la visión de crear piscinas 
                   de fibra de vidrio que superen los más altos estándares de calidad internacional. Fundada por 
                   ingenieros especializados en materiales compuestos, nuestra empresa se ha posicionado como 
                   referente en el segmento premium.
@@ -198,7 +198,7 @@ const About: React.FC = () => {
             <div className="relative">
               <LazyImage
                 src="https://images.pexels.com/photos/5691604/pexels-photo-5691604.jpeg?auto=compress&cs=tinysrgb&w=600"
-                alt="Instalaciones Multifibra"
+                alt="Instalaciones Piscinas Andinas"
                 className="rounded-xl shadow-2xl w-full h-auto"
               />
               <div className="absolute -bottom-6 -right-6 bg-blue-600 text-white p-8 rounded-xl shadow-lg">
@@ -446,7 +446,7 @@ const About: React.FC = () => {
             ¿Listo para la Excelencia?
           </h2>
           <p className="text-xl mb-8 text-blue-100 max-w-3xl mx-auto">
-            Únete a más de 200 familias que han confiado en Multifibra L.A. para crear 
+            Únete a más de 200 familias que han confiado en Piscinas Andinas para crear 
             piscinas excepcionales. Experiencia, calidad y servicio premium garantizados.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">

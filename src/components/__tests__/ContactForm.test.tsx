@@ -122,10 +122,10 @@ describe('ContactForm - Critical Component Tests', () => {
       renderWithProviders(<ContactForm />);
       
       // Fill form with valid data
-      await user.type(screen.getByLabelText(/nombre completo/i), 'Juan Pérez');
-      await user.type(screen.getByLabelText(/email/i), 'juan@example.com');
-      await user.type(screen.getByLabelText(/teléfono/i), '+56912345678');
-      await user.type(screen.getByLabelText(/ubicación del proyecto/i), 'Las Condes, Santiago');
+      await user.type(screen.getByLabelText(/nombre completo/i), 'Cliente de Prueba');
+      await user.type(screen.getByLabelText(/email/i), 'cliente@example.com');
+      await user.type(screen.getByLabelText(/teléfono/i), '+56900000000');
+      await user.type(screen.getByLabelText(/ubicación del proyecto/i), 'Santiago, Chile');
       await user.type(screen.getByLabelText(/detalles del proyecto/i), 'Necesito una piscina de 8x4 metros');
       
       const submitButton = screen.getByRole('button', { name: /enviar solicitud/i });
@@ -134,10 +134,10 @@ describe('ContactForm - Critical Component Tests', () => {
       await waitFor(() => {
         expect(mockSubmitForm).toHaveBeenCalledWith(
           expect.objectContaining({
-            name: 'Juan Pérez',
-            email: 'juan@example.com',
-            phone: '+56912345678',
-            location: 'Las Condes, Santiago',
+            name: 'Cliente de Prueba',
+            email: 'cliente@example.com',
+            phone: '+56900000000',
+            location: 'Santiago, Chile',
             message: 'Necesito una piscina de 8x4 metros'
           })
         );
@@ -158,9 +158,9 @@ describe('ContactForm - Critical Component Tests', () => {
       renderWithProviders(<ContactForm />);
       
       // Fill and submit form
-      await user.type(screen.getByLabelText(/nombre completo/i), 'Juan Pérez');
-      await user.type(screen.getByLabelText(/email/i), 'juan@example.com');
-      await user.type(screen.getByLabelText(/teléfono/i), '+56912345678');
+      await user.type(screen.getByLabelText(/nombre completo/i), 'Cliente de Prueba');
+      await user.type(screen.getByLabelText(/email/i), 'cliente@example.com');
+      await user.type(screen.getByLabelText(/teléfono/i), '+56900000000');
       await user.type(screen.getByLabelText(/ubicación del proyecto/i), 'Las Condes');
       await user.type(screen.getByLabelText(/detalles del proyecto/i), 'Test message');
       
@@ -185,7 +185,7 @@ describe('ContactForm - Critical Component Tests', () => {
       await user.click(whatsappButton);
       
       expect(mockOpen).toHaveBeenCalledWith(
-        expect.stringContaining('wa.me/56987654321'),
+        expect.stringContaining('wa.me/56900000000'),
         '_blank'
       );
     });

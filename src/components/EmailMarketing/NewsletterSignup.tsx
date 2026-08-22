@@ -302,7 +302,7 @@ const NewsletterSignup: React.FC<NewsletterSignupProps> = ({
 
         {/* Privacy Notice */}
         <p className="text-xs text-gray-500 text-center">
-          Al suscribirte, aceptas recibir emails de Multifibra L.A. Puedes cancelar tu suscripción 
+          Al suscribirte, aceptas recibir emails de Piscinas Andinas Puedes cancelar tu suscripción 
           en cualquier momento. Respetamos tu privacidad y no compartimos tu información.
         </p>
       </form>

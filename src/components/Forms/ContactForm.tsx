@@ -129,7 +129,7 @@ Detalles:
 
 ¿Podrían contactarme para agendar una visita técnica?`;
     
-    window.open(`https://wa.me/56987654321?text=${encodeURIComponent(message)}`, '_blank');
+    window.open(`https://wa.me/56900000000?text=${encodeURIComponent(message)}`, '_blank');
     trackCTAClick('whatsapp_form');
   };
 
@@ -265,7 +265,7 @@ Detalles:
                 aria-required="true"
                 aria-describedby="phone-error"
                 className="w-full pl-12 pr-4 py-4 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors text-lg"
-                placeholder="+56 9 1234 5678"
+                placeholder="+56 9 0000 0000"
               />
             </div>
           </div>

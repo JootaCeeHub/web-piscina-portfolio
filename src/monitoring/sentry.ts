@@ -20,8 +20,8 @@ export const initSentry = () => {
         // Set sampling rate for performance monitoring
         tracePropagationTargets: [
           'localhost',
-          /^https:\/\/multifibrala\.cl/,
-          /^https:\/\/.*\.multifibrala\.cl/,
+          /^https:\/\/piscinasandinas\.cl/,
+          /^https:\/\/.*\.piscinasandinas\.cl/,
         ],
       }),
     ],

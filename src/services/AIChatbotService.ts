@@ -83,7 +83,7 @@ class AIChatbotService {
   }
 
   private async loadKnowledgeBase(): Promise<void> {
-    // Comprehensive knowledge base for Multifibra L.A.
+    // Comprehensive knowledge base for Piscinas Andinas
     const knowledgeBase = {
       // Product Information
       products: {
@@ -150,7 +150,7 @@ class AIChatbotService {
       // Business Information
       business: {
         company: {
-          name: 'Multifibra L.A.',
+          name: 'Piscinas Andinas',
           experience: 'Más de 8 años especializados',
           projects: 'Más de 200 piscinas instaladas',
           coverage: 'Todo Chile',
@@ -233,7 +233,7 @@ class AIChatbotService {
     const flows = new Map([
       ['greeting', {
         responses: [
-          '¡Hola! 👋 Soy el asistente inteligente de Multifibra L.A. Estoy aquí para ayudarte a encontrar la piscina perfecta para tu hogar.',
+          '¡Hola! 👋 Soy el asistente inteligente de Piscinas Andinas Estoy aquí para ayudarte a encontrar la piscina perfecta para tu hogar.',
           '¡Bienvenido! Soy especialista en piscinas de fibra de vidrio de alto estándar. ¿En qué puedo ayudarte hoy?'
         ],
         nextStage: 'qualifying',
@@ -487,13 +487,13 @@ Contexto de la conversación:
 - Puntuación de lead: ${context.leadScore}
 - Entidades detectadas: ${JSON.stringify(entities)}
 
-Responde como especialista en piscinas de Multifibra L.A. de manera natural y útil.
+Responde como especialista en piscinas de Piscinas Andinas de manera natural y útil.
     `.trim();
   }
 
   private getSystemPrompt(): string {
     return `
-Eres un asistente especializado en piscinas de fibra de vidrio para Multifibra L.A., empresa líder en Chile.
+Eres un asistente especializado en piscinas de fibra de vidrio para Piscinas Andinas, empresa líder en Chile.
 
 INFORMACIÓN CLAVE:
 - Especialistas en piscinas de fibra de vidrio de alto estándar
@@ -533,7 +533,7 @@ Responde de manera concisa, útil y siempre orientada a ayudar al cliente a toma
       warranty: 'Ofrecemos la garantía más extensa del mercado: 25 años en estructura de fibra de vidrio, 5 años en equipamiento y 2 años en mano de obra.',
       maintenance: 'Las piscinas de fibra de vidrio requieren 70% menos mantenimiento que las de hormigón gracias a su superficie no porosa.',
       financing: 'Sí, ofrecemos financiamiento hasta 60 meses con tasas preferenciales. ¿Te gustaría que un especialista te contacte para revisar las opciones?',
-      contact: 'Puedes contactarnos al +56 9 8765 4321, por email a info@multifibrala.cl o solicitar una visita técnica gratuita.',
+      contact: 'Puedes contactarnos al +56 9 0000 0000, por email a contacto@piscinasandinas.example.com o solicitar una visita técnica gratuita.',
       location: 'Atendemos todo Chile con equipos especializados. ¿En qué región te encuentras?',
       comparison: 'La fibra de vidrio es superior al hormigón en durabilidad, mantenimiento, tiempo de instalación y resistencia. Es la elección inteligente.',
       technical: 'Utilizamos fibra de vidrio marina de 6-8mm con gel coat de 0.6mm y resina isoftálica, los mejores materiales del mercado.',

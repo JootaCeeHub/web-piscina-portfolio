@@ -89,7 +89,7 @@ const ChatbotAdvanced: React.FC = () => {
     return `chatbot_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
   }
 
-  // Advanced knowledge base for Multifibra L.A.
+  // Advanced knowledge base for Piscinas Andinas
   const knowledgeBase = {
     products: {
       'elegance_8x4': {
@@ -159,7 +159,7 @@ const ChatbotAdvanced: React.FC = () => {
   const initializeChat = () => {
     const welcomeMessage: Message = {
       id: generateMessageId(),
-      text: '¡Hola! 👋 Soy el asistente inteligente de Multifibra L.A.\n\nEstoy aquí para ayudarte a encontrar la piscina perfecta para tu hogar. ¿En qué puedo ayudarte hoy?',
+      text: '¡Hola! 👋 Soy el asistente inteligente de Piscinas Andinas\n\nEstoy aquí para ayudarte a encontrar la piscina perfecta para tu hogar. ¿En qué puedo ayudarte hoy?',
       sender: 'bot',
       timestamp: new Date(),
       type: 'text'
@@ -252,7 +252,7 @@ const ChatbotAdvanced: React.FC = () => {
 
       case 'contact':
         return {
-          text: '📞 **Contacto Directo:**\n\n🔥 **WhatsApp VIP:** +56 9 8765 4321\n📧 **Email:** premium@multifibrala.cl\n📞 **Teléfono:** +56 9 8765 4321\n\n**Horarios de Atención:**\n• Lunes a Viernes: 8:00 - 19:00\n• Sábados: 9:00 - 15:00\n• WhatsApp: 24/7\n\n¿Prefieres que te contactemos o quieres agendar una visita técnica?',
+          text: '📞 **Contacto Directo:**\n\n🔥 **WhatsApp VIP:** +56 9 0000 0000\n📧 **Email:** contacto@piscinasandinas.example.com\n📞 **Teléfono:** +56 9 0000 0000\n\n**Horarios de Atención:**\n• Lunes a Viernes: 8:00 - 19:00\n• Sábados: 9:00 - 15:00\n• WhatsApp: 24/7\n\n¿Prefieres que te contactemos o quieres agendar una visita técnica?',
           quickReplies: [
             { id: '1', text: '📱 WhatsApp ahora', action: 'whatsapp_contact' },
             { id: '2', text: '📞 Llamada telefónica', action: 'phone_contact' },
@@ -323,19 +323,19 @@ const ChatbotAdvanced: React.FC = () => {
         break;
 
       case 'whatsapp_contact':
-        window.open('https://wa.me/56987654321?text=Hola, me interesa agendar una visita técnica para evaluar mi proyecto de piscina', '_blank');
+        window.open('https://wa.me/56900000000?text=Hola, me interesa agendar una visita técnica para evaluar mi proyecto de piscina', '_blank');
         trackCTAClick('chatbot_whatsapp_click');
         trackBehavior(chatbotState.sessionId, 'whatsapp_click', { source: 'chatbot' });
         break;
 
       case 'phone_contact':
-        window.location.href = 'tel:+56987654321';
+        window.location.href = 'tel:+56900000000';
         trackCTAClick('chatbot_phone_click');
         trackBehavior(chatbotState.sessionId, 'phone_click', { source: 'chatbot' });
         break;
 
       case 'email_contact':
-        window.location.href = 'mailto:premium@multifibrala.cl?subject=Consulta sobre piscinas de fibra de vidrio';
+        window.location.href = 'mailto:contacto@piscinasandinas.example.com?subject=Consulta sobre piscinas de fibra de vidrio';
         trackCTAClick('chatbot_email_click');
         break;
 

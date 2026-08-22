@@ -107,7 +107,7 @@ const LiveChatWidget: React.FC = () => {
     
     const welcomeMessage: Message = {
       id: generateMessageId(),
-      text: '¡Hola! Soy el asistente virtual de Multifibra L.A. 👋\n\n¿En qué puedo ayudarte hoy? Puedo responder preguntas sobre nuestras piscinas, precios, instalación y más.',
+      text: '¡Hola! Soy el asistente virtual de Piscinas Andinas 👋\n\n¿En qué puedo ayudarte hoy? Puedo responder preguntas sobre nuestras piscinas, precios, instalación y más.',
       sender: 'bot',
       timestamp: new Date(),
       status: 'delivered'
@@ -208,7 +208,7 @@ const LiveChatWidget: React.FC = () => {
       setTimeout(() => {
         const agentMessage: Message = {
           id: generateMessageId(),
-          text: '¡Hola! Soy Carlos, especialista en piscinas de Multifibra L.A. He revisado tu consulta y estaré encantado de ayudarte. ¿Podrías contarme más sobre tu proyecto?',
+          text: '¡Hola! Soy tu asesor, especialista en piscinas de Piscinas Andinas He revisado tu consulta y estaré encantado de ayudarte. ¿Podrías contarme más sobre tu proyecto?',
           sender: 'agent',
           timestamp: new Date(),
           status: 'delivered'
@@ -265,10 +265,10 @@ const LiveChatWidget: React.FC = () => {
 
   const handleContactAction = (action: 'phone' | 'email') => {
     if (action === 'phone') {
-      window.location.href = 'tel:+56987654321';
+      window.location.href = 'tel:+56900000000';
       trackCTAClick('chat_phone_click');
     } else {
-      window.location.href = 'mailto:info@multifibrala.cl';
+      window.location.href = 'mailto:contacto@piscinasandinas.example.com';
       trackCTAClick('chat_email_click');
     }
   };
@@ -293,7 +293,7 @@ const LiveChatWidget: React.FC = () => {
                 }`}></div>
               </div>
               <div>
-                <h3 className="font-semibold">Multifibra L.A.</h3>
+                <h3 className="font-semibold">Piscinas Andinas</h3>
                 <p className="text-xs text-blue-100">
                   {agentStatus === 'online' ? 'En línea' : 
                    agentStatus === 'busy' ? 'Ocupado' : 'Desconectado'}

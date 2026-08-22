@@ -25,28 +25,28 @@ const Contact: React.FC = () => {
     {
       icon: Phone,
       title: 'Teléfono Premium',
-      content: '+56 9 8765 4321',
+      content: '+56 9 0000 0000',
       description: 'Línea directa para clientes premium',
-      action: 'tel:+56987654321'
+      action: 'tel:+56900000000'
     },
     {
       icon: Mail,
       title: 'Email Ejecutivo',
-      content: 'premium@multifibrala.cl',
+      content: 'contacto@piscinasandinas.example.com',
       description: 'Respuesta garantizada en 2 horas',
-      action: 'mailto:premium@multifibrala.cl'
+      action: 'mailto:contacto@piscinasandinas.example.com'
     },
     {
       icon: MapPin,
       title: 'Showroom Santiago',
-      content: 'Las Condes, Santiago',
+      content: 'Santiago, Chile',
       description: 'Visitas con cita previa',
       action: '#'
     },
     {
       icon: MessageCircle,
       title: 'WhatsApp VIP',
-      content: '+56 9 8765 4321',
+      content: '+56 9 0000 0000',
       description: 'Atención inmediata 24/7',
       action: 'whatsapp'
     }
@@ -104,7 +104,7 @@ const Contact: React.FC = () => {
     <div className="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
       <SEOHead 
         title="Contacto - Solicita tu Cotización Gratuita"
-        description="Contacta con Multifibra L.A. para solicitar tu cotización gratuita. Visita técnica sin compromiso. Teléfono, email y WhatsApp disponibles."
+        description="Contacta con Piscinas Andinas para solicitar tu cotización gratuita. Visita técnica sin compromiso. Teléfono, email y WhatsApp disponibles."
         keywords="contacto piscinas fibra vidrio, cotización piscinas Chile, visita técnica gratuita"
       />
       
@@ -172,7 +172,7 @@ const Contact: React.FC = () => {
                       <div className="flex items-start space-x-4 p-4 rounded-xl hover:bg-gray-50 transition-colors cursor-pointer"
                            onClick={() => {
                              if (info.action === 'whatsapp') {
-                               window.open('https://wa.me/56987654321', '_blank');
+                               window.open('https://wa.me/56900000000', '_blank');
                              } else if (info.action.startsWith('tel:') || info.action.startsWith('mailto:')) {
                                window.location.href = info.action;
                              }
@@ -245,7 +245,7 @@ const Contact: React.FC = () => {
                 </div>
               </div>
               <button
-                onClick={() => window.open('https://wa.me/56987654321?text=Necesito atención premium para mi proyecto de piscina', '_blank')}
+                onClick={() => window.open('https://wa.me/56900000000?text=Necesito atención premium para mi proyecto de piscina', '_blank')}
                 className="w-full bg-white text-blue-900 hover:bg-gray-100 px-6 py-4 rounded-xl font-semibold transition-colors inline-flex items-center justify-center space-x-2"
               >
                 <MessageCircle className="w-5 h-5" />

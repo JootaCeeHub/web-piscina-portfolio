@@ -100,7 +100,7 @@ class CRMIntegrationService {
     const payload = {
       lead: leadData,
       webhook_version: '2.0',
-      source: 'multifibra_website',
+      source: 'piscinasandinas_website',
       timestamp: new Date().toISOString()
     };
 
@@ -109,7 +109,7 @@ class CRMIntegrationService {
       headers: {
         'Content-Type': 'application/json',
         'Authorization': `Bearer ${this.apiKey}`,
-        'X-Source': 'multifibra-website',
+        'X-Source': 'piscinas-andinas-website',
         'X-Lead-Score': leadData.scoring.initialScore.toString(),
         'X-Lead-Priority': leadData.scoring.priority
       },

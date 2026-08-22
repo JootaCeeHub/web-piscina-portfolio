@@ -20,25 +20,25 @@ const SEOHead: React.FC<SEOHeadProps> = ({
   noindex = false
 }) => {
   const location = useLocation();
-  const baseUrl = 'https://multifibrala.cl';
+  const baseUrl = 'https://piscinasandinas.example.com';
   const currentUrl = `${baseUrl}${location.pathname}`;
 
-  const defaultTitle = 'Multifibra L.A. - Piscinas de Fibra de Vidrio de Alto Estándar | Chile';
+  const defaultTitle = 'Piscinas Andinas - Piscinas de Fibra de Vidrio de Alto Estándar | Chile';
   const defaultDescription = 'Especialistas en fabricación e instalación de piscinas de fibra de vidrio de lujo. Más de 8 años de experiencia, garantía 25 años. Instalación en 7-10 días. Servicio en todo Chile.';
-  const defaultKeywords = 'piscinas fibra de vidrio, piscinas Chile, instalación piscinas, piscinas de lujo, fibra de vidrio Chile, piscinas residenciales, Multifibra LA';
+  const defaultKeywords = 'piscinas fibra de vidrio, piscinas Chile, instalación piscinas, piscinas de lujo, fibra de vidrio Chile, piscinas residenciales, Piscinas Andinas';
 
-  const pageTitle = title ? `${title} | Multifibra L.A.` : defaultTitle;
+  const pageTitle = title ? `${title} | Piscinas Andinas` : defaultTitle;
   const pageDescription = description || defaultDescription;
   const pageKeywords = keywords || defaultKeywords;
 
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "Multifibra L.A.",
+    "name": "Piscinas Andinas",
     "description": pageDescription,
     "url": baseUrl,
-    "telephone": "+56987654321",
-    "email": "info@multifibrala.cl",
+    "telephone": "+56900000000",
+    "email": "contacto@piscinasandinas.example.com",
     "address": {
       "@type": "PostalAddress",
       "addressCountry": "CL",
@@ -97,7 +97,7 @@ const SEOHead: React.FC<SEOHeadProps> = ({
       <title>{pageTitle}</title>
       <meta name="description" content={pageDescription} />
       <meta name="keywords" content={pageKeywords} />
-      <meta name="author" content="Multifibra L.A." />
+      <meta name="author" content="Piscinas Andinas" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta name="theme-color" content="#2563eb" />
       
@@ -111,7 +111,7 @@ const SEOHead: React.FC<SEOHeadProps> = ({
       <meta property="og:description" content={pageDescription} />
       <meta property="og:image" content={`${baseUrl}${image}`} />
       <meta property="og:url" content={currentUrl} />
-      <meta property="og:site_name" content="Multifibra L.A." />
+      <meta property="og:site_name" content="Piscinas Andinas" />
       <meta property="og:locale" content="es_CL" />
       
       {/* Twitter Card */}

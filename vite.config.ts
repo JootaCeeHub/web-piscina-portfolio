@@ -40,8 +40,8 @@ export default defineConfig({
       },
       includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'masked-icon.svg'],
       manifest: {
-        name: 'Multifibra L.A. - Piscinas de Fibra de Vidrio',
-        short_name: 'Multifibra',
+        name: 'Piscinas Andinas - Piscinas de Fibra de Vidrio',
+        short_name: 'Piscinas Andinas',
         description: 'Especialistas en fabricación e instalación de piscinas de fibra de vidrio de alto estándar en Chile',
         theme_color: '#2563eb',
         background_color: '#ffffff',

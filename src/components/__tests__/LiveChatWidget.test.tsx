@@ -40,7 +40,7 @@ describe('LiveChatWidget', () => {
     const chatButton = screen.getByRole('button', { name: /abrir chat en vivo/i });
     await user.click(chatButton);
     
-    expect(screen.getByText('Multifibra L.A.')).toBeInTheDocument();
+    expect(screen.getByText('Piscinas Andinas')).toBeInTheDocument();
     expect(screen.getByText(/hola! soy el asistente virtual/i)).toBeInTheDocument();
   });
 
@@ -51,7 +51,7 @@ describe('LiveChatWidget', () => {
     const chatButton = screen.getByRole('button', { name: /abrir chat en vivo/i });
     await user.click(chatButton);
     
-    expect(screen.getByText(/hola! soy el asistente virtual de multifibra/i)).toBeInTheDocument();
+    expect(screen.getByText(/hola! soy el asistente virtual de piscinasandinas/i)).toBeInTheDocument();
   });
 
   test('shows quick reply buttons', async () => {
@@ -140,7 +140,7 @@ describe('LiveChatWidget', () => {
     await user.click(closeButton);
     
     // Chat should be closed
-    expect(screen.queryByText('Multifibra L.A.')).not.toBeInTheDocument();
+    expect(screen.queryByText('Piscinas Andinas')).not.toBeInTheDocument();
   });
 
   test('shows contact action buttons', async () => {
@@ -169,7 +169,7 @@ describe('LiveChatWidget', () => {
     const phoneButton = screen.getByText('Llamar');
     await user.click(phoneButton);
     
-    expect(window.location.href).toBe('tel:+56987654321');
+    expect(window.location.href).toBe('tel:+56900000000');
   });
 
   test('handles email action', async () => {
@@ -187,7 +187,7 @@ describe('LiveChatWidget', () => {
     const emailButton = screen.getByText('Email');
     await user.click(emailButton);
     
-    expect(window.location.href).toBe('mailto:info@multifibrala.cl');
+    expect(window.location.href).toBe('mailto:contacto@piscinasandinas.example.com');
   });
 
   test('shows agent status', async () => {

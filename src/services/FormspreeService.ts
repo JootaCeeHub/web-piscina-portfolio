@@ -49,7 +49,7 @@ class FormspreeService {
       _metadata: JSON.stringify(submission.metadata),
       _formType: submission.formType,
       _timestamp: new Date().toISOString(),
-      _source: 'multifibra_website'
+      _source: 'piscinasandinas_website'
     };
 
     try {
@@ -102,7 +102,7 @@ class FormspreeService {
 
   private generateSubject(formType: string, data: any): string {
     const subjects = {
-      contact: `Nueva consulta de ${data.name || 'Cliente'} - Multifibra L.A.`,
+      contact: `Nueva consulta de ${data.name || 'Cliente'} - Piscinas Andinas`,
       quote: `Solicitud de cotización de ${data.name || 'Cliente'} - ${data.poolType || 'Piscina'}`,
       newsletter: `Nueva suscripción al newsletter - ${data.email}`,
       technicalVisit: `Solicitud de visita técnica - ${data.name || 'Cliente'} en ${data.location || 'Ubicación'}`
@@ -182,7 +182,7 @@ class FormspreeService {
         headers: {
           'Content-Type': 'application/json',
           'Authorization': `Bearer ${apiConfig.crm.apiKey}`,
-          'X-Source': 'multifibra-website'
+          'X-Source': 'piscinas-andinas-website'
         },
         body: JSON.stringify(webhookPayload)
       });

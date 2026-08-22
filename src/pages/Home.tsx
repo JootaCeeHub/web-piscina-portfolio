@@ -217,8 +217,8 @@ const Home: React.FC = () => {
 
   const testimonials = [
     {
-      name: 'Patricia Morales',
-      location: 'Las Condes, Santiago',
+      name: 'Cliente A',
+      location: 'Santiago, Chile',
       text: 'La calidad de la fibra de vidrio es excepcional. Después de 3 años, la piscina se ve como nueva. La instalación fue impecable y muy rápida.',
       rating: 5,
       project: 'Elegance 8x4',
@@ -226,8 +226,8 @@ const Home: React.FC = () => {
       year: '2024'
     },
     {
-      name: 'Ricardo Silva',
-      location: 'Vitacura, Santiago',
+      name: 'Cliente B',
+      location: 'Santiago, Chile',
       text: 'El sistema de automatización es increíble. Controlo todo desde mi teléfono. El mantenimiento es mínimo comparado con mi piscina anterior.',
       rating: 5,
       project: 'Prestige 10x5',
@@ -235,17 +235,17 @@ const Home: React.FC = () => {
       year: '2024'
     },
     {
-      name: 'Carmen Rodríguez',
-      location: 'Viña del Mar',
-      text: 'La inversión valió cada peso. La piscina mantiene perfecta la temperatura y el acabado es de lujo. Multifibra superó nuestras expectativas.',
+      name: 'Cliente C',
+      location: 'Zona central de Chile',
+      text: 'La inversión valió cada peso. La piscina mantiene perfecta la temperatura y el acabado es de lujo. Piscinas Andinas superó nuestras expectativas.',
       rating: 5,
       project: 'Infinity 12x6',
       image: 'https://images.pexels.com/photos/6045790/pexels-photo-6045790.jpeg?auto=compress&cs=tinysrgb&w=400',
       year: '2024'
     },
     {
-      name: 'Andrés Mendoza',
-      location: 'Lo Barnechea, Santiago',
+      name: 'Cliente D',
+      location: 'Santiago, Chile',
       text: 'El equipo técnico es altamente profesional. Cumplieron todos los plazos y la calidad del trabajo es impecable. Recomiendo 100%.',
       rating: 5,
       project: 'Elegance 8x4',
@@ -870,7 +870,7 @@ const Home: React.FC = () => {
             ¿Listo para Tu Piscina de Ensueño?
           </h2>
           <p className="text-xl mb-12 text-blue-100 max-w-4xl mx-auto leading-relaxed">
-            Únete a más de 200 familias que han confiado en Multifibra L.A. para crear 
+            Únete a más de 200 familias que han confiado en Piscinas Andinas para crear 
             su oasis personal. Cotización gratuita, visita técnica sin compromiso y 
             financiamiento disponible.
           </p>
@@ -904,7 +904,7 @@ const Home: React.FC = () => {
               <span>Solicitar Cotización Exclusiva</span>
             </Link>
             <button
-              onClick={() => window.open('https://wa.me/56987654321?text=Hola, me interesa una piscina de fibra de vidrio de alto estándar. ¿Podrían enviarme información?', '_blank')}
+              onClick={() => window.open('https://wa.me/56900000000?text=Hola, me interesa una piscina de fibra de vidrio de alto estándar. ¿Podrían enviarme información?', '_blank')}
               className="group border-2 border-white text-white hover:bg-white hover:text-blue-900 px-10 py-5 rounded-xl font-semibold text-lg transition-all duration-300 flex items-center justify-center space-x-3"
               aria-label="Contactar por WhatsApp directo"
             >
